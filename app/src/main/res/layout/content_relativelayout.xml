@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvImg"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/tvImg"/>
+
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/tvImg"
+        android:layout_toRightOf="@id/tvPhone"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/tvNum"
+        android:layout_marginTop="32dp" />
+
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/recyclerView"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/iv1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/recyclerView"
+        android:layout_toRightOf="@id/iv1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/iv2"
+        android:layout_toRightOf="@+id/tv1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/recyclerView"
+        android:layout_toRightOf="@id/iv2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/tv2"
+        android:layout_below="@id/iv3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>
